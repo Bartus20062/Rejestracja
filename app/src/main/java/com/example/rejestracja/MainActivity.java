@@ -1,6 +1,7 @@
 package com.example.rejestracja;
 
 import android.os.Bundle;
+import android.text.InputType;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -24,6 +25,9 @@ public class MainActivity extends AppCompatActivity {
         haslo2 = findViewById(R.id.haslo2);
         komunikat = findViewById(R.id.powiadomienie);
         zatweirdz = findViewById(R.id.zatwierdz);
+
+        haslo.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+        haslo2.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
 
         zatweirdz.setOnClickListener(new View.OnClickListener() {
             @Override
